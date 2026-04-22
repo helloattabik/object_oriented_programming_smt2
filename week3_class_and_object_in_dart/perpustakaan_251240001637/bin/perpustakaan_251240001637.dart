@@ -1,4 +1,5 @@
 import 'package:perpustakaan_251240001637/perpustakaan_251240001637.dart' as perpustakaan_251240001637;
+import 'dart:io';
 
 class Buku{
   String judul = '';
@@ -26,6 +27,8 @@ class Buku{
 }
 void main(List<String> arguments) {
 
+  
+
   Buku buku1 = Buku();
   buku1.judul = 'Harry Potter';
   buku1.penulis = 'J.K. Rowling';
@@ -47,9 +50,24 @@ void main(List<String> arguments) {
   buku3.tahunTerbit = 1925;
   buku3.Tersedia = true;
 
-
-  buku1.tampilkanInfo();
-  buku2.tampilkanInfo();
-  buku3.tampilkanInfo();
-
+  int screen = 80;
+  print('='*screen);
+  print('Selamat Datang di Perpustakaan UNISNU Jepara');
+  print('='*screen);
+    while (true){
+      print('1. Lihat Daftar Buku');
+      print('2. Pinjam Buku');
+      print('3. Kembalikan Buku');
+      stdout.write('Pilih menu'.padRight(40)+': ');
+      int userSelect = int.parse(stdin.readLineSync()!);
+      if(userSelect == 1){
+        buku1.tampilkanInfo();
+        buku2.tampilkanInfo();
+        buku3.tampilkanInfo();
+      }
+      else if(userSelect == 2){
+        stdout.write('Masukkan nomor ISBN buku'.padRight(40)+': ');
+        String checkOut = stdin.readLineSync()!;
+      }
+  }
 }
