@@ -1,0 +1,86 @@
+PS E:\Mata Kuliah\Semester 2\Pemrograman Berbasis Objek\object_oriented_programming_smt2\perbankan> dart run
+Building package executable...
+Built perbankan:perbankan.
+
+----------------------------------------------------------------------
+                       SISTEM LAYANAN PERBANKAN
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+                            DAFTAR NASABAH
+----------------------------------------------------------------------
+NAMA PEMILIK                   NOMOR REKENING       KATEGORI
+----------------------------------------------------------------------
+Tri Misbachul Attabik          12300000001          [REGULER]
+Fardin Rismawan                12300000002          [PRIORITAS]
+Muhammad Nabil Ariq            12300000003          [PRIORITAS]
+
+[GAGAL] PIN harus terdiri dari 6 angka
+
+[BERHASIL] PIN @Tri Misbachul Attabik berhasil diubah
+
+----------------------------------------------------------------------
+                          INFORMASI REKENING
+----------------------------------------------------------------------
+Nama                : Tri Misbachul Attabik
+Jenis Rekening      : Reguler
+Nomor Rekening      : 12300000001
+Saldo               : Rp. 6000000
+
+----------------------------------------------------------------------
+                           STATUS TRANSAKSI
+----------------------------------------------------------------------
+Transaksi           : TARIK TUNAI
+Nominal             : 4000000
+Status              : GAGAL PIN salah
+Nama                : Tri Misbachul Attabik
+No. Rekening        : 12300000001
+Sisa Saldo          : 6000000
+
+----------------------------------------------------------------------
+                           STATUS TRANSAKSI
+----------------------------------------------------------------------
+Transaksi           : TARIK TUNAI
+Nominal             : 4000000
+Status              : BERHASIL
+Nama                : Tri Misbachul Attabik
+No. Rekening        : 12300000001
+Sisa Saldo          : 2000000
+
+----------------------------------------------------------------------
+                           STATUS TRANSAKSI
+----------------------------------------------------------------------
+Transaksi           : TARIK TUNAI
+Nominal             : 2000000
+Status              : GAGAL Saldo/Limit tidak mencukupi
+Nama                : Tri Misbachul Attabik
+No. Rekening        : 12300000001
+Sisa Saldo          : 2000000
+
+----------------------------------------------------------------------
+                          INFORMASI REKENING
+----------------------------------------------------------------------
+Nama                : Fardin Rismawan
+Jenis Rekening      : Prioritas
+Nomor Rekening      : 12300000002
+Saldo               : Rp. 100000000
+
+----------------------------------------------------------------------
+                           STATUS TRANSAKSI
+----------------------------------------------------------------------
+Transaksi           : TARIK TUNAI
+Nominal             : 40000000
+Status              : GAGAL PIN salah
+Nama                : Fardin Rismawan
+No. Rekening        : 12300000002
+Sisa Saldo          : 100000000
+
+----------------------------------------------------------------------
+                           STATUS TRANSAKSI
+----------------------------------------------------------------------
+Transaksi           : SETOR TUNAI
+Nominal             : 40000000
+Status              : BERHASIL
+Nama                : Muhammad Nabil Ariq
+No. Rekening        : 12300000003
+Sisa Saldo          : 50000000
