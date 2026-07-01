@@ -81,7 +81,7 @@ class POSIndonesiaService implements ShippingService {
     print(
         '${"Cost".padRight(padRight)}: Rp. ${calculateShippingCost(weightKg, destination)}');
     print(
-        '${"Delivery Days".padRight(padRight)}: ${estimateDeliveryDays(destination)}');
+        '${"Delivery Days".padRight(padRight)}: ${estimateDeliveryDays(destination)} days');
   }
 }
 
@@ -104,7 +104,7 @@ void main() {
   
   comparator.compareAll(10, 'Jakarta');
 
-  print("\n===== Tracking =====");
+  print('='*screen);
   print(JNEService().trackPackage("JNE001"));
   print(SiCepatService().trackPackage("SCP001"));
 }
